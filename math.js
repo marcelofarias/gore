@@ -4,7 +4,7 @@ function squared(x) {
 	return x * x;
 }
 
-function isPrime(num) {
+function isVeryPrime(num) {
 	if (num === 2) {
 		return true;
 	} else if (num > 1) {
@@ -12,6 +12,7 @@ function isPrime(num) {
 			if (num % i !== 0) {
 				return true;
 			} else if (num === squared(i)) {
+			    // a new line
 				return false;
 			} else {
 				return false;
